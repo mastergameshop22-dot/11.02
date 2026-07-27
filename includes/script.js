@@ -1,11 +1,14 @@
 let timerId = null; 
 const label = document.getElementById('autoJbLabel');
 const checkbox = document.getElementById('autoJbInput');
-const jeilbrekBtn = document.getElementById('jeilbrek');
+
+// تم تصحيح اسم الزرار هنا ليتطابق مع الـ HTML 
+const jeilbrekBtn = document.getElementById('jailbreak'); 
 const UAElement = document.getElementById("UA");
 
-const storedAutoJb = localStorage.getItem("autoJb");
-let autoJbValue = storedAutoJb !== null ? storedAutoJb === "true" : true;
+// إجبار الكود على التشغيل التلقائي دائماً بدون الرجوع للذاكرة القديمة
+let autoJbValue = true;
+localStorage.setItem("autoJb", true);
 
 // choose one of kernel exploits
 var exploitChain = localStorage.getItem("exploitChain") || "lapse";
@@ -34,7 +37,6 @@ checkbox.addEventListener('change', function () {
         jailbreakCountdown();
         return;
     }
-
     stopInterval();
 });
 
@@ -49,7 +51,8 @@ function stopInterval(){
 function jailbreakCountdown() {   
     stopInterval();
 
-    let countdown = 5;
+    // تم تعديل العد التنازلي لـ 3 ثواني ليكون أسرع
+    let countdown = 3; 
     label.textContent = `Auto Jailbreaking in: ${countdown}`;
     timerId = setInterval(() => {
         countdown--;
