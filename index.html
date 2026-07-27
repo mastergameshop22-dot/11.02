@@ -5,177 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GAME SHOP STORE GOLD HEN 11.02</title>
   <link rel="stylesheet" href="includes/style.css">
-  <style>
-    /* تنسيقات مدمجة لجعل الصفحة احترافية (يمكنك نقلها لملف style.css لاحقاً) */
-    :root {
-      --primary-color: #0070cc;
-      --primary-hover: #005fa3;
-      --bg-color: #0f111a;
-      --panel-bg: #1a1d27;
-      --text-color: #ffffff;
-      --console-bg: #050505;
-    }
-
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 30px 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    /* تنسيق اسم البراند ليكون كلوجو احترافي */
-    .brand-logo {
-      font-size: 3.5rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      color: var(--text-color);
-      text-shadow: 0 0 15px var(--primary-color), 0 0 30px var(--primary-color);
-      margin-bottom: 5px;
-      text-align: center;
-    }
-
-    .subtitle {
-      color: #8892b0;
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-
-    h3#UA {
-      font-size: 0.9rem;
-      color: #64748b;
-      margin-bottom: 25px;
-      font-weight: normal;
-    }
-
-    hr {
-      width: 100%;
-      max-width: 700px;
-      border: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
-      margin-bottom: 35px;
-    }
-
-    .btn-container {
-      background-color: var(--panel-bg);
-      padding: 30px 40px;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 25px;
-      width: 100%;
-      max-width: 450px;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-    }
-
-    #kernel-options {
-      display: flex;
-      gap: 20px;
-      font-size: 1.1rem;
-      color: #cbd5e1;
-    }
-
-    input[type="radio"] {
-      accent-color: var(--primary-color);
-      transform: scale(1.2);
-      cursor: pointer;
-    }
-
-    label {
-      cursor: pointer;
-    }
-
-    /* تنسيق الزر الأزرق */
-    #jailbreak {
-      background-color: var(--primary-color);
-      color: white;
-      border: none;
-      padding: 15px 40px;
-      font-size: 1.5rem;
-      font-weight: bold;
-      border-radius: 8px;
-      cursor: pointer;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0, 112, 204, 0.4);
-      width: 100%;
-    }
-
-    #jailbreak:hover {
-      background-color: var(--primary-hover);
-      box-shadow: 0 6px 25px rgba(0, 112, 204, 0.7);
-      transform: translateY(-2px);
-    }
-
-    .autoJb {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 1rem;
-      color: #94a3b8;
-    }
-
-    input[type="checkbox"] {
-      width: 18px;
-      height: 18px;
-      accent-color: var(--primary-color);
-      cursor: pointer;
-    }
-
-    .main-layout {
-      margin-top: 30px;
-      width: 100%;
-      max-width: 700px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    /* تنسيق شاشة الأوامر (الكونسول) */
-    #console {
-      background-color: var(--console-bg);
-      color: #10b981; /* لون أخضر برمجي */
-      padding: 20px;
-      border-radius: 12px;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 1rem;
-      border: 1px solid #1e293b;
-      min-height: 120px;
-      overflow-x: auto;
-      box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.8);
-      margin: 0;
-    }
-  </style>
 </head>
 <body>
 
-  <!-- اللوجو النصي الاحترافي -->
-  <div class="brand-logo">GAME SHOP STORE</div>
-  <div class="subtitle">GOLD HEN 11.02</div>
+  <h1>GAME SHOP STORE GOLD HEN 11.02</h1>
   <h3 id="UA">Running on:</h3>
 
   <hr>
 
   <div class="btn-container">
     <form id="kernel-options">
-      <input type="radio" name="kernel" id="netctrl-exploit" value="netctrl" checked>
+      <input type="radio" name="kernel" id="netctrl-exploit" value="netctrl">
       <label for="netctrl-exploit">NetCtrl</label>
       <input type="radio" name="kernel" id="lapse-exploit" value="lapse">
       <label for="lapse-exploit">Lapse</label>
     </form>
-    
     <button id="jailbreak">Jailbreak</button>
-    
     <div class="autoJb">
       <label for="autoJbInput" id="autoJbLabel">Auto Jailbreak</label>
       <input class="mt-2" id="autoJbInput" type="checkbox">
@@ -183,12 +28,17 @@
   </div>
 
   <div class="main-layout">
-    <!-- يمكنك استبدال هذا الجزء بكود صورة حقيقية للوجو مستقبلاً إذا أردت -->
+    <div class="media-box">
+      <h2>GAME SHOP STORE</h2>
+    </div>
+
     <pre id="console">Ready. Awaiting execution...
-</pre>
+  </pre>
+
   </div>
 
   <script src="src/main.js"></script>
   <script src="includes/script.js"></script>
 </body>
+
 </html>
