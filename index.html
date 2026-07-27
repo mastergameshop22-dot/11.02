@@ -6,17 +6,16 @@
   <title>GAME SHOP STORE GOLD HEN 11.02</title>
   <link rel="stylesheet" href="includes/style.css">
   <style>
-    /* التنسيقات الجديدة */
+    /* التنسيقات العامة */
     :root {
       --primary-color: #0070cc;
       --primary-hover: #005fa3;
-      --panel-bg: rgba(26, 29, 39, 0.85); /* شفافية بسيطة لتوضيح الخلفية */
+      --panel-bg: rgba(26, 29, 39, 0.85);
       --text-color: #ffffff;
       --console-bg: #050505;
     }
 
     body {
-      /* خلفية متدرجة من الأزرق للأسود */
       background: linear-gradient(135deg, #001533 0%, #000000 100%);
       background-attachment: fixed;
       color: var(--text-color);
@@ -29,10 +28,10 @@
       min-height: 100vh;
     }
 
-    /* تنسيق اسم البراند في المنتصف بخط كبير جداً وعريض */
+    /* تنسيق اسم البراند */
     .brand-logo {
-      font-size: 5rem; /* حجم خط كبير جداً */
-      font-weight: 900; /* خط عريض جداً */
+      font-size: 5rem;
+      font-weight: 900;
       text-transform: uppercase;
       letter-spacing: 5px;
       color: var(--text-color);
@@ -162,11 +161,49 @@
       box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.9);
       margin: 0;
     }
+
+    /* تنسيق بيانات التواصل (أرقام وعنوان) بنفس روح تصميم اللوجو */
+    .contact-info {
+      margin-top: 30px;
+      text-align: center;
+      background-color: var(--panel-bg);
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid rgba(0, 112, 204, 0.2);
+    }
+
+    .contact-phones {
+      font-size: 1.5rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: var(--text-color);
+      text-shadow: 0 0 10px rgba(0, 112, 204, 0.8), 0 0 20px rgba(0, 112, 204, 0.5);
+      margin-bottom: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      direction: ltr;
+    }
+
+    .contact-address {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #cbd5e1;
+      line-height: 1.6;
+      text-shadow: 0 0 5px rgba(0, 112, 204, 0.4);
+      direction: rtl;
+    }
     
-    /* استجابة الشاشات الصغيرة لتصغير اللوجو قليلاً */
+    /* استجابة الشاشات الصغيرة */
     @media (max-width: 768px) {
       .brand-logo {
         font-size: 3rem;
+      }
+      .contact-phones {
+        font-size: 1.2rem;
+        flex-direction: column;
+        gap: 5px;
       }
     }
   </style>
@@ -199,6 +236,18 @@
   <div class="main-layout">
     <pre id="console">Ready. Awaiting execution...
 </pre>
+
+    <!-- إضافة بيانات التواصل هنا -->
+    <div class="contact-info">
+      <div class="contact-phones">
+        <span>01024388999</span> | 
+        <span>01020244499</span> | 
+        <span>0502370475</span>
+      </div>
+      <div class="contact-address">
+        العنوان: 43 شارع الايمان من حى الجامعه، أول شارع بعد مول الجامعه بلازا، على اول الشارع مطعم هوت مكس
+      </div>
+    </div>
   </div>
 
   <script src="src/main.js"></script>
